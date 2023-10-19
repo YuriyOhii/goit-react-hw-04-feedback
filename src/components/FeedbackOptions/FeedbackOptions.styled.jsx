@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 export const ControlsBox = styled.ul`
-  margin-bottom: 20px;
+  margin-bottom: ${({theme})=>theme.spacing(5)};
   display: flex;
-  gap: 10px;
+  gap: ${({theme})=>theme.spacing(3)};
   justify-content: center;
   list-style: none;
 `;
@@ -17,8 +17,8 @@ export const BtnFeedback = styled.button`
   border: none;
   border-radius: 4px;
 
-  background-color: blue;
-  color: #fff;
+  background-color: ${({theme})=>theme.colors.blue};
+  color: ${({theme})=>theme.colors.white};
 
   cursor: pointer;
   outline: none;

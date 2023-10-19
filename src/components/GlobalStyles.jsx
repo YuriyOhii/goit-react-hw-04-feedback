@@ -1,6 +1,8 @@
-@import-normalize; /* bring in normalize.css styles */
+import { createGlobalStyle } from 'styled-components';
+import 'modern-normalize';
 
-body {
+export const GlobalStyles = createGlobalStyle`
+    body {
   padding: 50px;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -19,3 +21,4 @@ ul, ol, p, h1,h2,h3,h4,h5,h6 {
   margin: 0;
   padding: 0;
 }
+`
