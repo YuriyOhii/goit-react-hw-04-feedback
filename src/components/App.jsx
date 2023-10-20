@@ -11,8 +11,8 @@ export const App = () => {
     bad: 0,
   });
 
-  const handleClick = ({ target }) => {
-    const btnName = target.name;
+  const handleClick = (btnName) => {
+    
     setFeedback(prevState => ({
       ...prevState,
       [btnName]: prevState[btnName] + 1,

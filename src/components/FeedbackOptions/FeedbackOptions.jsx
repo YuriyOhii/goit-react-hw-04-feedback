@@ -8,7 +8,7 @@ export const FeedbackOptions = ({
     <ControlsBox>
       {options.map(el => (
         <li key={el}>
-          <BtnFeedback type="button" name={el} onClick={onLeaveFeedback}>
+          <BtnFeedback type="button" name={el} onClick={() =>onLeaveFeedback(el)}>
             {el}
           </BtnFeedback>
         </li>
